@@ -80,7 +80,7 @@ Here is an example of the different responsive views of the application:
 
 ### Details page
 
-![Details Page](./src/assets/screenshots/details.PNG)
+![Details Page](./src/assets/screenshots/details.png)
 
 ### Videos page
 
