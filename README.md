@@ -91,3 +91,8 @@ Here is an example of the different responsive views of the application:
 ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs. It can also enforce coding styles to maintain code quality.
 
 Prettier is a code formatter that ensures consistent code style by parsing your code and re-printing it with its own rules. It helps eliminate debates over code formatting and enforces a consistent style across your codebase.
+
+## Original creators
+
+- [Brisna Paez](https://www.linkedin.com/in/brisna-a-paez-m-283934154/)
+- [Guillermo Sosa Almeida](https://www.linkedin.com/in/guillermo-sosa-almeida/)
