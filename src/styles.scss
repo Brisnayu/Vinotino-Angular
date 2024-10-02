@@ -10,11 +10,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   text-decoration: none;
   list-style: none;
   color: inherit;
+  animation: showContent 1.5s ease-out;
 }
 
 main {
   height: 70vh;
-  animation: showContent 1.5s ease-out;
 }
 
 button {
