@@ -11,16 +11,21 @@ export class BranchIndicatorComponent implements OnInit {
   private masterBranch: boolean = false;
 
   ngOnInit(): void {
-    window.location.href.includes('fifa-exam-develop')
-      ? (this.devBranch = true)
-      : window.location.href.includes('fifa-exam')
-        ? (this.masterBranch = true)
-        : null;
+    const url = window.location.href;
+    // console.log("URL actual:", url); 
+
+    if (url.includes('fifa-exam-develop')) {
+      this.devBranch = true;
+    } else if (url.includes('fifa-exam')) {
+      this.masterBranch = true;
+    }
 
     this.branchName = this.devBranch
       ? 'Develop'
       : this.masterBranch
         ? 'Master'
         : 'Localhost';
+
+    // console.log("Branch:", this.branchName); 
   }
 }
