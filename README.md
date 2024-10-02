@@ -76,15 +76,15 @@ Here is an example of the different responsive views of the application:
 
 ### Home page
 
-![Home Page](./src/assets/screenshots/home.png)
+![Home Page](https://res.cloudinary.com/dx8j6h1rb/image/upload/v1727895145/VINOTINTO/home_zfmk6g.png)
 
 ### Details page
 
-![Details Page](./src/assets/screenshots/details.png)
+![Details Page](https://res.cloudinary.com/dx8j6h1rb/image/upload/v1727895145/VINOTINTO/details_q4nwin.png)
 
 ### Videos page
 
-![Videos page](./src/assets/screenshots/videos.png)
+![Videos page](https://res.cloudinary.com/dx8j6h1rb/image/upload/v1727895145/VINOTINTO/videos_rd9vk8.png)
 
 ## ESLint and Prettier
 
