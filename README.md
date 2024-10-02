@@ -76,15 +76,15 @@ Here is an example of the different responsive views of the application:
 
 ### Home page
 
-![Home Page](./src/assets/screenshots/Home.PNG)
+![Home Page](./src/assets/screenshots/home.png)
 
 ### Details page
 
-![Details Page](./src/assets/screenshots/Details.PNG)
+![Details Page](./src/assets/screenshots/details.png)
 
 ### Videos page
 
-![Videos page](./src/assets/screenshots/Videos.PNG)
+![Videos page](./src/assets/screenshots/videos.png)
 
 ## ESLint and Prettier
 
