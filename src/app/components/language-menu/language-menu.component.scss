@@ -1,0 +1,25 @@
+@import '../../../styles/variables';
+
+.language-button {
+  padding: 1rem;
+  border-radius: 50%;
+  transition: 0.5s all ease-in-out;
+  &:hover {
+    color: $yellow;
+  }
+}
+.language-menu-button {
+  width: 100%;
+  span {
+    margin-right: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  img {
+    justify-self: end;
+    max-height: 25px;
+    max-width: 25px;
+    margin-left: 0;
+  }
+}

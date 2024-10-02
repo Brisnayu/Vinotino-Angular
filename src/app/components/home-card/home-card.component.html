@@ -1,0 +1,11 @@
+<button class="card" (click)="navigateToDetails(card.id)">
+  <div class="card-inner">
+    <div class="card-front">
+      <img [src]="card.img_url" [alt]="card.name" />
+    </div>
+    <div class="card-back">
+      <h2>{{ card.name }}</h2>
+      <p>{{ 'card-text' | translate }}</p>
+    </div>
+  </div>
+</button>

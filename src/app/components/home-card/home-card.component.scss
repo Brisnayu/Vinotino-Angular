@@ -1,0 +1,65 @@
+@import '../../../styles/variables';
+
+.card {
+  width: 20vw;
+  height: 100%;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.9s ease-in-out;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+  transition: 1.5s ease-out;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background: $red-blur;
+  border-radius: 10px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 15px;
+    border-radius: 25px;
+  }
+}
+
+.card-back {
+  background: $red-blur;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(180deg);
+  text-shadow: 2px 2px 4px $dark-blue;
+  h2 {
+    font-size: xx-large;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 80vw;
+    height: 40vh;
+  }
+}

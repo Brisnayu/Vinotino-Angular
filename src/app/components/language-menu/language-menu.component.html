@@ -1,0 +1,21 @@
+<button
+  mat-button-extended
+  [matMenuTriggerFor]="menu"
+  class="language-button"
+  aria-label="Language"
+>
+  {{ 'language' | translate }}
+</button>
+<mat-menu #menu="matMenu">
+  <button
+    mat-menu-item
+    *ngFor="let language of languages"
+    (click)="switchLanguage(language.code)"
+    class="language-menu-button"
+  >
+    <span>
+      {{ language.name }}
+      <img [src]="language.img" [alt]="language.alt" />
+    </span>
+  </button>
+</mat-menu>

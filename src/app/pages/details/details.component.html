@@ -1,0 +1,26 @@
+<main *ngIf="player && player.person">
+  <div class="player-details">
+    <section class="player-image">
+      <div class="image-container">
+        <div class="red-background"></div>
+
+        <img [src]="player.img_url" [alt]="player.person.name" />
+        <button mat-icon-button (click)="navigateToVideos()">
+          <mat-icon>ondemand_video</mat-icon>
+        </button>
+      </div>
+    </section>
+    <section class="player-stats">
+      <h2>{{ player.person.name }} | {{ 'stats' | translate }}</h2>
+      <div *ngFor="let stat of playerStats" class="stat">
+        <span>{{ stat.key | translate }}</span>
+        <div class="progress-bar">
+          <div class="progress" [style.width.%]="stat.value">
+            <span>{{ stat.value }}</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <app-button-back [routePage]="routerPage"></app-button-back>
+</main>

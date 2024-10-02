@@ -1,0 +1,20 @@
+<mat-toolbar class="header">
+  <mat-toolbar-row class="first-toolbar">
+    <app-branch-indicator class="branch-indicator"></app-branch-indicator>
+    <button class="logo" (click)="navigateHome()">
+      <img src="../../../assets/icons/logo_vinotinto.png" alt="Logo" />
+    </button>
+    <app-language-menu class="language-menu"></app-language-menu>
+  </mat-toolbar-row>
+  <mat-toolbar-row class="second-toolbar">
+    <xng-breadcrumb>
+      <ng-container
+        *xngBreadcrumbItem="let breadcrumb; let info = info; let first = first"
+      >
+        <mat-icon *ngIf="info">{{ info }}</mat-icon>
+        <span class="spacer"></span>
+        <ng-container *ngIf="!first">{{ breadcrumb | translate }}</ng-container>
+      </ng-container>
+    </xng-breadcrumb>
+  </mat-toolbar-row>
+</mat-toolbar>

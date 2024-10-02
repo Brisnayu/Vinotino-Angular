@@ -1,0 +1,12 @@
+<main *ngIf="player && player.person">
+  <h2>{{ player.person.name }}</h2>
+
+  <section class="container-videos">
+    <div class="video-element" *ngFor="let video of videosPlayer">
+      <iframe [src]="getVideoYoutube(video.value)" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <app-button-back [routePage]="routerPage"></app-button-back>
+
+</main>
